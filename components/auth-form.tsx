@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Chrome } from "lucide-react";
+import { Globe } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -65,7 +65,7 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
           {mode === "login" ? "邮箱登录" : "邮箱注册"}
         </Button>
         <Button variant="outline" className="w-full" onClick={signInWithGoogle}>
-          <Chrome className="mr-2 h-4 w-4" />
+          <Globe className="mr-2 h-4 w-4" />
           使用 Google 继续
         </Button>
         <p className="text-sm leading-7 text-muted-foreground">{message}</p>
