@@ -1,0 +1,13 @@
+部署上线
+推荐：
+Vercel：最适合 Next.js，几乎一键部署
+Netlify：也可以，但 Next.js 支持不如 Vercel 自然
+自己服务器：用 Node.js + PM2/Nginx 部署
+如果你用 Vercel，流程基本是：
+
+把项目上传到 GitHub
+登录 Vercel
+导入仓库
+配置环境变量
+点击 Deploy
+这样你就得到一个公网网站。

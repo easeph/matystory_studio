@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 53% 11%;
+  --foreground: 45 70% 94%;
+  --card: 220 46% 14%;
+  --card-foreground: 45 70% 94%;
+  --primary: 44 75% 58%;
+  --primary-foreground: 220 58% 10%;
+  --secondary: 215 34% 22%;
+  --secondary-foreground: 45 70% 94%;
+  --accent: 202 67% 36%;
+  --accent-foreground: 45 70% 94%;
+  --muted: 220 28% 22%;
+  --muted-foreground: 45 18% 76%;
+  --border: 217 31% 28%;
+  --ring: 44 75% 58%;
+}
+
+.light {
+  --background: 44 60% 97%;
+  --foreground: 219 62% 16%;
+  --card: 0 0% 100%;
+  --card-foreground: 219 62% 16%;
+  --primary: 218 71% 30%;
+  --primary-foreground: 45 80% 95%;
+  --secondary: 45 65% 88%;
+  --secondary-foreground: 219 62% 16%;
+  --accent: 43 72% 54%;
+  --accent-foreground: 219 62% 16%;
+  --muted: 42 45% 92%;
+  --muted-foreground: 218 24% 35%;
+  --border: 40 28% 82%;
+  --ring: 218 71% 30%;
+}
+
+* {
+  @apply border-border;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  background-image:
+    radial-gradient(circle at top, rgba(212, 175, 55, 0.18), transparent 28%),
+    linear-gradient(135deg, rgba(9, 19, 48, 0.98), rgba(12, 31, 71, 0.95));
+  background-attachment: fixed;
+}
+
+.light body {
+  background-image:
+    radial-gradient(circle at top, rgba(232, 192, 88, 0.15), transparent 24%),
+    linear-gradient(180deg, rgba(255, 250, 239, 0.98), rgba(246, 239, 223, 0.98));
+}
+
+.math-grid {
+  background-size: 24px 24px;
+}
+
+.story-prose p {
+  @apply mb-4 leading-8 text-muted-foreground;
+}
+
+.story-prose h3 {
+  @apply mb-3 mt-8 font-display text-2xl text-primary;
+}
